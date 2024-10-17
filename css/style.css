@@ -1,0 +1,135 @@
+:root{
+    --font-fam: 'DM Sans', sans-serif;
+    font-size: 16px;;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-fam);
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    background-color: #fff;
+    box-shadow: 0px 5px 10px #0001;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grid-container {
+    display: grid;
+    align-items: center;
+    
+}
+
+.nav_home_button {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 13px;
+}
+
+.nav_home_button > img{
+    width: 3em;
+    height: auto;
+}
+
+.nav_home_button_text {
+    margin: 0;
+    color: #08B16B;
+    font-weight: 700;
+    font-size: 1.4em;
+}
+
+.nav_buttons {
+    display: flex;
+    align-items: center;
+    gap: 1.3em;
+}
+
+.nav_regis_button{
+    background-color: #0A8754;
+    color: white;
+    border-radius: 45px;
+    padding: 0.6em 2.4em;
+}
+
+.nav_log_in_button{
+    background-color: #54B5FF;
+    color: white;
+    border-radius: 45px;
+    padding: 0.6em 3em;
+}
+
+
+.header-left-container{
+    margin: 10em 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.7em;
+}
+
+.header-left-container > h1 {
+    margin: 0;
+    font-size: 3em;
+    font-weight: 700;
+    
+    & > span{
+        color: #0A8754;
+    }
+}
+
+.header-left-container > p {
+    margin: 0;
+    font-size: 1.3em;
+    font-weight: 500;
+    color: #000D;
+}
+
+.cta-button {
+    align-self: flex-start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0A8754;
+    color: white;
+    border-radius: 50px;
+    padding: 0 1.8em;
+    font-size: 1em;
+    font-weight: 700;
+    gap: 0.7em;
+}
+
+.cta-button > img {
+    width: 2em;
+    height: auto;
+}
+
+.header-container-img {
+    flex-shrink: 0.6;
+    width: 60%;
+    height: auto;
+    mask-image: radial-gradient(circle, #fff 60%, #0000 70%);
+}
+
+.header-container-img > img {
+    width: 100%;
+    height: auto;
+}
+
+.container-a {
+    height: 200px;
+}
