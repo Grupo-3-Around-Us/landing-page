@@ -1,0 +1,49 @@
+:root {
+    --font-fam: 'DM Sans', sans-serif; /*fuente a usar en todo el documento*/
+    font-size: 16px; /*tamaño base de fuente para que todo se vea uniforme*/
+}
+
+body {
+    margin: 0; /*eliminamos el margen por defecto*/
+    padding: 0; /*eliminamos el padding por defecto*/
+    font-family: var(--font-fam); /*aplicamos la fuente que definimos arriba con la variable*/
+}
+
+.container-fluid { /*el fondo degradado se pone en un contenedor*/
+    background: linear-gradient(0deg, #88A6D2 0%, #BAE1FF 105%); /*degradado de azules*/
+}
+
+.texto_primario { /*estilos del h1*/
+    font-weight: bold; /*el texto está en negrita*/
+    color: #375567; /*color para el texto del h1, pero no para la palabra "eventos"*/
+}
+
+.eventos {
+    color: green; /*resaltamos la palabra "eventos" con el verde*/
+}
+
+.subtitulo_texto { /*color del texto debajo del h1*/
+    margin: 9px; /*margen para alejarlo un poco del h1*/
+    color: #6399AD; /*color azul más suave para el subtítulo*/
+}
+
+/*estilo para las flechas*/
+.flecha_izq, .flecha_der {
+    font-size: 80px; /*tamaño*/
+    color: #445189; /*color*/
+    margin: 0 -22px; /*separación*/
+}
+
+/*separar la última flecha de cada lado*/
+.flecha_izq_separacion {
+    margin-right: 40px; /*separación*/
+}
+
+.flecha_der_separacion {
+    margin-left: 40px; /*separación*/
+}
+
+.bordes_video {
+    border-radius: 20px; /*borde redondo de 20px*/
+    overflow: hidden; /*para evitar que el video se salga de los bordes*/
+}
