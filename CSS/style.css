@@ -1,0 +1,130 @@
+:root{
+    --font-fam: 'DM Sans', sans-serif;
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-fam);
+}
+
+.grid-container {
+    display: grid;
+    align-items: center;
+    
+}
+.container {
+    position: relative;
+    width: 100%; /* Cambiado a 100% para que ocupe todo el ancho */
+    height: auto;
+    z-index: 2;
+    margin: 0; /* Eliminado el margen para que se pegue a la izquierda */
+    overflow: visible;
+
+    & > h2 {
+        margin: 0;
+        width: 100%; /* Ajustado a 100% para que ocupe todo el ancho */
+        height: auto;
+        font-size: 3em;
+        font-weight: 700;
+        color: #3E677C;
+        text-align: left; 
+        z-index: 2;
+    }
+    
+    & > img {
+        position: relative;
+        z-index: 2;
+        max-width: 100%; 
+        height: auto;
+        margin-left: 0; /* Eliminado el margen izquierdo para que se pegue a la izquierda */
+    }
+}
+
+.circulo {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top: 70%; 
+    left: 10%; /* Cambiado a left para que se pegue a la izquierda */
+    width: 40vw; 
+    max-width: 500px; 
+    height: 40vw; 
+    max-height: 500px; 
+    background-color: #95BCCB;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.text_container {
+    position: relative;
+    z-index: 2;
+    width: 60%; /* Ajustado a 60% para que ocupe menos espacio */
+    max-width: 500px; /* Máximo ancho */
+    margin: 3em auto; /* Centrado horizontalmente */
+    padding: 3em 2em;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    background-color: #375567;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+
+    & > h3 {
+        margin: 0;
+        font-size: 1.7em;
+        font-weight: 700;
+        color: #08B16B;
+    }
+
+    & > p {
+        margin: 0;
+        font-size: 1em; 
+        font-weight: 2;
+        color: white;
+    }
+}
+
+.text_container2 {
+    width: 80%; 
+    max-width: 430px; 
+    margin: 3em auto; /* Cambiado el margen para que se pegue a la izquierda */
+    padding: 3em 2em;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    background-color: #6399AD;
+    border: 2px dashed black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+
+    & > h3 {
+        margin: 0;
+        font-size: 1.7em;
+        font-weight: 700;
+        color: #08B16B;
+    }
+
+    & > p {
+        margin: 0;
+        font-size: 1em; 
+        font-weight: 2;
+        color: white;
+    }
+}
+
+/* Media Queries para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Más ancho en pantallas pequeñas */
+    }
+
+    .circulo {
+        width: 80%; /* Ajustar el tamaño del círculo */
+        max-width: 400px; /* Máximo ancho */
+    }
+}
