@@ -15,9 +15,9 @@ body {
     align-items: center;
     
 }
-.container {
+.componente {
     position: relative;
-    width: 100%; /* Cambiado a 100% para que ocupe todo el ancho */
+    width: 80%; /* Cambiado a 100% para que ocupe todo el ancho */
     height: auto;
     z-index: 2;
     margin: 0; /* Eliminado el margen para que se pegue a la izquierda */
@@ -47,8 +47,8 @@ body {
     position: absolute;
     display: flex;
     flex-direction: row;
-    top: 70%; 
-    left: 10%; /* Cambiado a left para que se pegue a la izquierda */
+    top: 10%; 
+    left: 0%; /* Cambiado a left para que se pegue a la izquierda */
     width: 40vw; 
     max-width: 500px; 
     height: 40vw; 
@@ -58,8 +58,15 @@ body {
     z-index: 0;
 }
 
+.container{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
 .text_container {
     position: relative;
+    text-align: justify;
     z-index: 2;
     width: 60%; /* Ajustado a 60% para que ocupe menos espacio */
     max-width: 500px; /* Máximo ancho */
@@ -103,10 +110,11 @@ body {
     gap: 2em;
 
     & > h3 {
+        text-align: center;
         margin: 0;
         font-size: 1.7em;
         font-weight: 700;
-        color: #08B16B;
+        color: white;
     }
 
     & > p {
