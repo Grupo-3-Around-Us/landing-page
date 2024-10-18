@@ -1,6 +1,7 @@
 :root{
     --font-fam: 'DM Sans', sans-serif;
-    font-size: 16px;;
+    font-size: 16px;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -130,6 +131,119 @@ header {
     height: auto;
 }
 
-.container-a {
-    height: 200px;
+.form-container {
+    background-image: url(../imgs/fondo-form-contacto.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.form-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.form-contacto {
+    position: relative;
+    z-index: 2;
+}
+
+.form-contacto {
+    backdrop-filter: blur(10px);
+    width: 430px;
+    border-radius: 15px;
+    padding: 3em 2em;
+    background-color: #57A9CA88;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    margin: 3em 7em;
+
+    & > h3 {
+        margin: 0;
+        font-size: 1.7em;
+        font-weight: 700;
+        color: white;
+    }
+}
+
+.form-campos-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2em;
+    width: 100%;
+}
+
+.form-campo {
+    font-size: 1em;
+    font-weight: 600;
+    box-sizing: border-box;
+    width: 100%;
+    border: none;
+    border-radius: 20px;
+    padding: 1.2em 1.5em;
+}
+
+.form-mensaje {
+    resize: none;
+    padding: 1em 1.5em;
+    border-radius: 20px;
+    border: none;
+    width: 100%;
+}
+
+.form-campo:focus {
+    outline: none;
+    box-shadow: 0 0 10px 5px #4aa1e4de;
+    transition: box-shadow 0.3s;
+}
+
+.form-terminos {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+
+    & > input {
+        transform: scale(1.5);
+    }
+
+    & > input:checked {
+        background-color: #0A8754;
+        border-color: #0A8754;
+    }
+
+    & > label {
+        color: white;
+        font-size: 0.8em;
+    }
+}
+
+.form-mensaje {
+    height: 100px;
+    overflow: hidden;
+}
+
+.form-button {
+    align-self: center;
+    background-color: #8BD0FF;
+    border-radius: 45px;
+    width: auto;
+    padding: 0.6em 4em;
+    border-style: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    
+    transition: all 0.3s;
+}
+
+.form-button:hover {
+    background-color: #54B5FF;
 }
