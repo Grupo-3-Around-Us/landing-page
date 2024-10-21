@@ -34,8 +34,11 @@ body {
     position: relative;
     z-index: 2;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: center;  /* Centra el bloque completo horizontalmente */
+    align-items: center;      /* Alinea verticalmente el contenido del bloque */
+    gap: 20px;                /* Espacio entre la imagen y el texto */
+    text-align: left;         /* Mantiene el texto alineado a la izquierda */
+    margin-top: 50px;         /* Baja el bloque 50px; ajusta este valor según sea necesario */
 }
 
 .header-content img {
