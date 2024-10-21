@@ -1,0 +1,120 @@
+/* Estilos para el fondo de la página */
+body {
+    background: radial-gradient(circle, white, #ADD8E6, #95BCCB 50%);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    max-width: 1800px;
+    height: auto; /* Cambiado a auto para permitir que el contenido crezca */
+    background-size: 100% 240%;
+    background-repeat: no-repeat;
+    font-size: 40px;
+    overflow-x: hidden; /* Evitar desbordamiento horizontal */
+}
+
+/* Contenedor principal con Grid */
+.grid-container {
+    display: grid; /* Activa el Grid */
+    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr)); /* Ajusta el tamaño de las columnas */
+    gap: 20px; /* Espacio entre los elementos */
+    padding: 20px; /* Espacio interior */
+}
+
+/* Estilos para el encabezado */
+header {
+    text-align: center;
+    margin: 100px;
+    color: white;
+    z-index: 1;
+    position: relative;
+}
+
+/* Contenedor para los cuadros */
+.contenedor {
+    display: grid; /* Mantiene el Grid */
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual ancho */
+    row-gap: 200px; /* Espacio entre las filas */
+    column-gap: 100px; /* Espacio entre las columnas */
+    justify-items: center;
+    margin: 40px 200px; /* Margen para los cuadros de arriba */
+    z-index: 1;
+    position: relative;
+}
+
+/* Ajuste de márgenes para los cuadros de arriba */
+.cuadro:nth-child(-n+3) { /* Selecciona los primeros 3 cuadros */
+    margin-left: -200px; /* Desplaza 50px hacia la izquierda */
+}
+
+/* Estilo para los cuadros */
+.cuadro {
+    background-color: #508CA4;
+    border-radius: 40px;
+    padding: 20px;
+    margin: 10px;
+    width: 290px;
+    height: 410px;
+    text-align: center;
+    color: white;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo para los títulos dentro de los cuadros */
+.cuadro h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+/* Estilo general para los párrafos dentro de los cuadros */
+.cuadro p {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    width: 92%;
+    line-height: 1.5;
+}
+
+/* Imágenes alineadas y ajustadas */
+.cuadro img {
+    height: auto;
+    border-radius: 15px;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    position: relative;
+    top: -40px;
+}
+
+/* Tamaño de imagen específico para cada cuadro */
+.cuadro:nth-child(1) img { width: 56%; margin-top: -10px; }
+.cuadro:nth-child(2) img { width: 55%; margin-top: -10px; }
+.cuadro:nth-child(3) img { width: 60%; margin-top: -10px; }
+.cuadro:nth-child(4) img { width: 58%; margin-top: -30px; }
+.cuadro:nth-child(5) img { width: 90%; margin-top: -20px; }
+.cuadro:nth-child(6) img { width: 70%; margin-top: -20px; }
+
+/* Estilo para el fondo SVG punteado */
+.svg-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 160vh;
+    z-index: 0;
+}
+
+.svg-background path {
+    stroke: #375567;
+    stroke-width: 2;
+    stroke-linecap: round;
+    fill: none; /* Cambiado a 'none' */
+    stroke-dasharray: 5, 5; /* Ajusta la longitud de los guiones y espacios */
+    filter: url(#shadow);
+}
