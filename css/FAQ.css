@@ -1,0 +1,93 @@
+
+
+/* Contenedor específico para la sección FAQ */
+.grid-container-FAQ {
+    display: grid;
+    justify-items: center;
+    margin-top: 40px; /* Espacio superior para separar la sección */
+}
+
+/* Estilo para la imagen de fondo */
+.fondo-imagen {
+    position: absolute; /* Posiciona la imagen detrás de todo */
+    top: 0; /* Alinea en la parte superior */
+    right: 0; /* Alinea a la derecha */
+    width: 230px; /* Ajusta el tamaño según sea necesario */
+    z-index: -1; /* Asegura que esté detrás de otros elementos */
+}
+
+h1 {
+    font-size: 58px;
+    color: #375567;
+    margin-top: 30px;
+    margin-bottom: 20px; /* Reducido para añadir espacio para la línea */
+    font-family: Arial, sans-serif;
+    font-weight: 50;
+    text-align: center; /* Centra el texto */
+}
+
+.linea-primera {
+    width: 60%;
+    border: none;
+    border-top: 1px solid gray; /* Color y grosor específico para la primera línea */
+    margin-bottom: 80px;
+}
+
+.linea-general {
+    width: 90%;
+    border: none;
+    border-top: 2px solid #ccc; /* Color y grosor para las demás líneas */
+    margin-bottom: 50px; /* Espaciado alrededor de las líneas */
+    margin-top: -20px;
+}
+
+.contenedor-FAQ {
+
+    position: relative;
+    width: 90%; /* Cambiado a 100% para adaptarse al contenedor */
+    max-width: 1500px; /* Limitar el ancho máximo */
+    height: auto; /* Permite que la altura se ajuste al contenido */
+    background-color: #D9D9D9;
+    border: 2px solid #ccc;
+    margin-bottom: 50px; /* Espacio entre rectángulos */
+    padding: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+
+.titulo {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%; /* Cambiado a 100% para adaptarse al contenedor */
+    height: 55px;
+    font-size: 25px;
+    background-color: #E4EAF5;
+    color: black;
+    text-align: left;
+    line-height: 55px;
+    border-radius: 20px;
+    z-index: 10; /* Asegura que el título esté por delante */
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+    padding-left: 20px;
+}
+
+/* Para agregar el "+" al final de cada título */
+.titulo::after {
+    content: " +";
+    float: right;
+    padding-right: 20px;
+    font-size: 70px;
+    font-weight: normal;
+}
+
+.parrafo {
+    margin: 30px;
+    margin-top: 50px; /* Ajuste para no sobreponerse con el título */
+    font-size: 28px;
+    text-align: justify;
+    color: black;
+    background-color: #D9D9D9;
+    border: 20px;
+}

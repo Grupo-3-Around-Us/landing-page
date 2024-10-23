@@ -1,0 +1,127 @@
+
+
+
+.testimonial-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    position: relative;
+    background-color: #DEECEF;
+    overflow: hidden;
+}
+
+.testimonial-background::before {
+    content: "";
+    position: absolute; 
+    background-position: center;
+    width: 175%; /* Aumentar el tamaño para cubrir el contenedor */
+    height: 175%; /* Aumentar el tamaño para cubrir el contenedor */
+    background-image: url(../img/testimonios-fondo.png); /* Ruta de la imagen */
+    background-size: contain; /* Asegurarse de que la imagen cubra el contenedor */
+    z-index: 0; /* Colocar el pseudo-elemento detrás del contenido */
+}
+
+.testimonial-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.testimonial-title {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #3A4A7D;
+    margin-bottom: 30px;
+}
+
+.testimonials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.testimonial {
+    background-color: rgba(208, 220, 237, 0.5); /* Celeste medio transparente */
+    border-radius: 30px;
+    padding: 20px;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    flex-shrink: 0;
+    backdrop-filter: blur(15px); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonial .quote-icon {
+    font-size: 2.5em;
+    color: #3A4A7D;
+    margin-bottom: 20px;
+}
+
+.testimonial p {
+    font-size: 1.2em;
+    color: #333333;
+    margin: 20px 0;
+}
+
+.testimonial .author-info {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.testimonial > .author-info > img {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.testimonial .author {
+    font-weight: bold;
+    color: #3A4A7D;
+    font-size: 1.2em;
+}
+
+.testimonial .role {
+    font-size: 1.1em;
+    color: #666666;
+}
+
+.pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination .dot {
+    height: 10px;
+    width: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.pagination .dot.active {
+    background-color: #3A4A7D;
+}
+
+.nav-button {
+    background-color: #3A4A7D;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+

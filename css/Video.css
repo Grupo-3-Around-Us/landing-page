@@ -1,0 +1,72 @@
+
+.container-fluid { /*el fondo degradado se pone en un contenedor*/
+    background: linear-gradient(0deg, #88A6D2 0%, #BAE1FF 105%); /*degradado de azules*/
+}
+
+.texto_primario { 
+    font-weight: bold; 
+    color: #375567; 
+    font-size: 3em; /* Aseguramos un buen tamaño de texto */
+}
+
+.eventos {
+    color: green; /*resaltamos la palabra "eventos" con el verde*/
+}
+
+.texto-centro {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centramos horizontalmente */
+    justify-content: center; /* Centramos verticalmente */
+    height: 100%; /* Para ocupar todo el alto del contenedor */
+    text-align: center; /* Alineamos el texto al centro */
+
+}
+
+.subtitulo_texto { 
+    margin: 9px; 
+    color: #6399AD; 
+    font-size: 1.5em; /* Tamaño del subtítulo para que sea más pequeño que el principal */
+    margin-top: 7px; /* Separación entre el texto principal y el subtítulo */
+}
+
+/*estilo para las flechas*/
+.flecha_izq, .flecha_der {
+    font-size: 100px; /* Tamaño de las flechas */
+    margin: 10px 0; /* Espacio entre las flechas */
+    color: #6399AD; /* Color de las flechas */
+}
+
+.flecha_izq{
+    margin-left: -50px;
+}
+
+.flecha_der{
+    margin-right: -50px;
+}
+
+.flechas-contenedor {
+    display: flex;
+    align-items: center;
+}   
+
+/*separar la última flecha de cada lado*/
+.flecha_izq_separacion, .flecha_der_separacion {
+    display: flex;
+    flex-direction: row; /* Alinea las flechas en vertical */
+    align-items: center;
+    margin: 0 10px;
+}
+
+.d-flex.align-items-center.mt-5 {
+    justify-content: center; /* Asegura que el contenido esté centrado horizontalmente */
+}
+
+.bordes_video {
+    max-width: 100%; /* Asegúrate de que el video no exceda su contenedor */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 40px; /* Añadir espaciado de 10px debajo del video */
+}

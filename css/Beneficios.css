@@ -1,0 +1,105 @@
+
+.Beneficios {
+    background: radial-gradient(circle, white, #ADD8E6, #95BCCB 50%);
+    padding: 40px 0;
+    text-align: center;
+}
+
+/* Estilo del header que mantiene el título centrado */
+.beneficios-header > h1 {
+    font-size: 32px;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* Estilo general del contenedor de los beneficios */
+.grid-container-beneficios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Contenedor para los cuadros de beneficios con Grid */
+.contenedor-beneficios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* Tres columnas */
+    grid-gap: 20px;  /* Espacio entre los cuadros */
+    justify-items: center; /* Centra los elementos en las columnas */
+    padding: 0 20px;
+}
+
+/* Estilo para los cuadros de beneficios */
+.cuadro-beneficio {
+    background-color: #508CA4;
+    border-radius: 40px;
+    padding: 20px;
+    width: 290px;
+    height: 410px;
+    text-align: center;
+    color: white;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s;
+}
+
+/* Efecto de hover para los cuadros */
+.cuadro-beneficio:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo para los títulos dentro de los cuadros de beneficios */
+.cuadro-beneficio h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+/* Estilo general para los párrafos dentro de los cuadros de beneficios */
+.cuadro-beneficio p {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    width: 92%;
+    line-height: 1.5;
+}
+
+/* Imágenes alineadas y ajustadas para los cuadros de beneficios */
+.cuadro-beneficio img {
+    height: auto;
+    border-radius: 15px;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    position: relative;
+    top: -40px;
+}
+
+/* Tamaño de imagen específico para cada cuadro de beneficios */
+.cuadro-beneficio:nth-child(1) img { width: 56%; margin-top: -10px; }
+.cuadro-beneficio:nth-child(2) img { width: 55%; margin-top: -10px; }
+.cuadro-beneficio:nth-child(3) img { width: 60%; margin-top: -10px; }
+.cuadro-beneficio:nth-child(4) img { width: 58%; margin-top: -30px; }
+.cuadro-beneficio:nth-child(5) img { width: 90%; margin-top: -20px; }
+.cuadro-beneficio:nth-child(6) img { width: 70%; margin-top: -20px; }
+
+/* Responsive para tamaños medianos: 2 columnas */
+@media (max-width: 1024px) {
+    .contenedor-beneficios {
+        grid-template-columns: repeat(2, 1fr);  /* Dos columnas */
+    }
+}
+
+/* Responsive para móviles pequeños: 1 columna */
+@media (max-width: 600px) {
+    .contenedor-beneficios {
+        grid-template-columns: 1fr;  /* Una columna */
+    }
+}
+
+

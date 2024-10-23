@@ -1,0 +1,39 @@
+
+.nav_home_button {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 13px;
+}
+
+.nav_home_button > img{
+    width: 3em;
+    height: auto;
+}
+
+.nav_home_button_text {
+    margin: 0;
+    color: #08B16B;
+    font-weight: 700;
+    font-size: 1.4em;
+}
+
+.nav_buttons {
+    display: flex;
+    align-items: center;
+    gap: 1.3em;
+}
+
+.nav_regis_button{
+    background-color: #0A8754;
+    color: white;
+    border-radius: 45px;
+    padding: 0.6em 2.4em;
+}
+
+.nav_log_in_button{
+    background-color: #54B5FF;
+    color: white;
+    border-radius: 45px;
+    padding: 0.6em 3em;
+}
