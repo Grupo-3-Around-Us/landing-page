@@ -1,0 +1,127 @@
+/* Estilos para el fondo de la página */
+body {
+    background: radial-gradient(circle, white, #ADD8E6, #95BCCB 50%);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    max-width: 1800px;
+    height: auto;
+    background-size: 100% 240%;
+    background-repeat: no-repeat;
+    font-size: 40px;
+    overflow-x: hidden;
+}
+
+/* Contenedor principal con Grid */
+.grid-container {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Estilos para la sección de beneficios */
+.beneficios-section {
+    position: relative;
+}
+
+/* Estilos para el encabezado de beneficios */
+.beneficios-header {
+    text-align: center;
+    margin: 100px;
+    color: white;
+    z-index: 1;
+    position: relative;
+}
+
+/* Estilos para el SVG de fondo de beneficios */
+.svg-background-beneficios {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 160vh;
+    z-index: 0;
+}
+
+.svg-background-beneficios path {
+    stroke: #375567;
+    stroke-width: 2;
+    stroke-linecap: round;
+    fill: none;
+    stroke-dasharray: 5, 5;
+    filter: url(#shadow-beneficios);
+}
+
+/* Contenedor de la sección de beneficios con Grid */
+.grid-container-beneficios {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Contenedor para los cuadros de beneficios */
+.contenedor-beneficios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 200px;
+    column-gap: 100px;
+    justify-items: center;
+    margin: 40px 200px;
+    z-index: 1;
+    position: relative;
+}
+
+/* Estilo para los cuadros de beneficios */
+.cuadro-beneficio {
+    background-color: #508CA4;
+    border-radius: 40px;
+    padding: 20px;
+    margin: 10px;
+    width: 290px;
+    height: 410px;
+    text-align: center;
+    color: white;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo para los títulos dentro de los cuadros de beneficios */
+.cuadro-beneficio h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+/* Estilo general para los párrafos dentro de los cuadros de beneficios */
+.cuadro-beneficio p {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    width: 92%;
+    line-height: 1.5;
+}
+
+/* Imágenes alineadas y ajustadas para los cuadros de beneficios */
+.cuadro-beneficio img {
+    height: auto;
+    border-radius: 15px;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    position: relative;
+    top: -40px;
+}
+
+/* Tamaño de imagen específico para cada cuadro de beneficios */
+.cuadro-beneficio:nth-child(1) img { width: 56%; margin-top: -10px; }
+.cuadro-beneficio:nth-child(2) img { width: 55%; margin-top: -10px; }
+.cuadro-beneficio:nth-child(3) img { width: 60%; margin-top: -10px; }
+.cuadro-beneficio:nth-child(4) img { width: 58%; margin-top: -30px; }
+.cuadro-beneficio:nth-child(5) img { width: 90%; margin-top: -20px; }
+.cuadro-beneficio:nth-child(6) img { width: 70%; margin-top: -20px; }
