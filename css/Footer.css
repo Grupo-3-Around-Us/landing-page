@@ -1,0 +1,92 @@
+
+
+.footer {
+    background-color: #344956;
+    padding: 20px;
+    color: white;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.contenedor-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr; /* Un poco más de espacio a la izquierda */
+    align-items: flex-start;
+}
+
+/* Estilos de la izquierda (logo, texto, redes sociales y copyright) */
+.lado-izquierdo {
+    margin-left: 50px;
+    text-align: left;
+}
+
+.lado-izquierdo .d-flex {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+.nombre-marca {
+    font-size: 32px;
+    color: #08B16B;
+    margin-top: 11px;
+}
+
+.iconos-redes-sociales {
+    margin-top: 20px;
+    margin-left: 90px; /* Desplaza las redes sociales un poco hacia la derecha */
+}
+
+.icono-red {
+    width: 18px;
+    height: 18px;
+    margin: 0 5px;
+}
+
+.copyright {
+    margin-top: 25px;
+    font-size: 14px;
+}
+
+/* Estilos de la derecha (Explora) */
+.lado-derecho {
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left; /* Ligeramente más a la izquierda */
+    margin-right: 60px;
+}
+
+.titulo-explora {
+    font-size: 26px;
+    margin-top: 15px;
+}
+
+.secciones-explora {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.secciones-explora > li {
+    font-size: 14px;
+}
+
+.secciones-explora > li>  a {
+    text-decoration: none;
+    color: white;
+}
+
+.secciones-explora > li > a:hover {
+    text-decoration: underline;
+}
